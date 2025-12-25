@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+} 
+ 
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #333, #bb02ff);
+  background-attachment: fixed;
+}
+ 
+.container{
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+img{
+    width: 100%;
+     
+}
+ 
+.container .card{
+  position: relative;
+  width: 300px;
+  height: 420px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 25px rgba(0,0,0,.2);
+  background-color: #fff;
+  margin: 20px;
+  overflow: hidden;
+  transition: .5s;
+}
+ 
+.container:hover .card{
+  filter: blur(20px);
+  transform: scale(0.9);
+  opacity: 0.5;
+} 
+ 
+.container .card:hover{
+  filter: blur(0);
+  transform: scale(1.1);
+  opacity: 1;
+} 
+ 
+.container .card .circle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  clip-path: circle(290px at center 0);
+  text-align: center;
+}
+ 
+ 
+.container .card .content{
+  position: absolute;
+  bottom: 10px;
+  page-break-after: 20px;
+  text-align: center;
+  padding: 20px;
+}
+ 
+.container .card .content p{
+  color: #666;
+  text-align: justify;
+  font-size: 15px;
+}
+ 
+.container .card .content a{
+  position: relative;
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin-top: 20px;
+  text-decoration: none;
+   
+}
+ 
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a{
+  background-color: #ffaf00;
+}
+ 
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a{
+  background-color: #9b0bdd;
+}
+ 
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a{
+  background-color: #0fff07;
+}
+
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a{
+  background-color: #00caee;
+}

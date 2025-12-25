@@ -1,0 +1,1069 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+   
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+    font-size: 4rem;
+    color: rgb(15, 215, 75);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    background: var(--secondary);
+}
+
+/* header */
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: #09dc22cf;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 9%;
+    
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #050505;
+}
+.logo {
+    display: inline-block;
+    background-image: url('layasafariimages/logo.jpg'); /* Replace with your logo path */
+    background-repeat: no-repeat; /* Ensures the logo is not repeated */
+    background-size: contain; /* Adjust as needed */
+    padding-left: 60px; /* Adjust to the width of your logo */
+    line-height: 60px; /* Adjust to the height of your logo */
+    text-decoration: none; /* Removes underline from link */
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #050505;
+    margin: 0 1rem;
+    text-decoration: none; /* Remove underline */
+}
+
+.header .navbar a:hover{
+    color: var(--white);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover{
+    color: var(--white);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover{
+    color: var(--primary);
+}
+
+/* end */
+
+/* home */
+
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.home .slide .content{
+    width: 80rem;
+    text-align: center;
+}
+
+.home .slide .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 1.1;
+    padding: 2rem 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: var(--white);
+    color: var(--black);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background: var(--primary);
+    color: var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
+}
+
+/* end */
+
+/* availability */
+
+.availability form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: #eee;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.availability form .box{
+    flex: 1 1 20rem;
+}
+
+.availability form .box p{
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.availability form .box .input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+/* end */
+
+/* about */
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+
+.about .row .image{
+    flex: 1 1 30rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 51rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: var(--primary);
+    padding: 2rem 0;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* end */
+
+/* rooms */
+
+.room .slide{
+    background: var(--white);
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 4rem;
+}
+
+.room .slide .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.room .slide .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.room .slide .image .price{
+    position: absolute;
+    top: 2.5rem; left: 2.5rem;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    text-transform: lowercase;
+}
+
+.room .slide .image .fa-shopping-cart{
+    position: absolute;
+    top: 2.5rem; right: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--white);
+    color: var(--black);
+    border-radius: 50%;
+}
+
+.room .slide .image .fa-shopping-cart:hover{
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.room .slide .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.room .slide .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.room .slide .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.room .slide .content .stars{
+    padding: 1rem 0;
+}
+
+.room .slide .content .stars i{
+    font-size: 1.7rem;
+    color: var(--primary);
+}
+
+/* end */
+
+/* services */
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box{
+    text-align: center;
+}
+
+.services .box-container .box img{
+    height: 10rem;
+    margin-bottom: .7rem;
+}
+
+.services .box-container .box h3{
+    font-size: 1.7rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+/* end */
+
+/* gallery */
+
+.gallery .slide{
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .slide .icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery .slide .icon i{
+    font-size: 6rem;
+    color: var(--white);
+}
+
+.gallery .slide:hover .icon{
+    display: flex;
+}
+
+/* end */
+
+/* review */
+
+.review{
+    background-image: url("images/review.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 48rem;
+    position: relative;
+    margin: 4rem 0;
+}
+
+.review .review-slider{
+    background: var(--secondary);
+    padding: 2rem;
+    width: 50%;
+    height: 145%;
+    margin-top: -8rem;
+    margin-right: 60rem;
+    padding-top: 6%;
+    color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.review .slide{
+    text-align: center;
+}
+
+.review .slide .heading{
+    color: var(--white);
+}
+
+.review .slide i{
+    font-size: 6rem;
+    color: var(--primary);
+}
+
+.review .slide p{
+    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--white);
+}
+
+.review .slide .user{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border-radius: .5rem;
+}
+
+
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 15%;
+    object-fit: cover;
+}
+
+.review .slide .user h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.review .slide .user i{
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+/* end */
+
+/* reservation */
+
+.reservation form{
+    padding: 2rem;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+}
+
+.reservation form .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reservation form .container .box{
+    flex: 1 1 40rem;
+}
+
+.reservation form .container .box p{
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.reservation form .container .box .input{
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid rgba(0, 0, 0, 0.1);
+    color: var(--black);
+}
+
+/* end */
+
+
+/* end */
+.spacer {
+    margin-bottom: 15rem; /* Add margin-bottom to create space */
+}
+
+
+.contact-form {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 40px 30px;
+}
+.contact-form .btn {
+	background: rgb(7, 243, 231);
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px 50px;
+	letter-spacing: 2px;
+}
+.map-area {
+	width: 600px;
+	height: 465px;
+	background: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.map-area iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/*responsive*/
+
+@media (max-width: 991px) {
+	.contact-form {
+		margin-bottom: 30px;
+	}
+	.map-area {
+		width: 100%;
+		height: 400px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem 3rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content{
+        width: 50rem;
+    }
+
+    .review .review-slider{
+        width: 100%;
+        padding: 1rem;
+        padding-top: 15%;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .slide .content{
+        width: 30rem;
+    }
+
+    .home .slide .content h3{
+        font-size: 3rem;
+    }
+
+}
+/* Add this CSS at the end of your existing style.css file */
+
+/* Video */
+/* Video */
+.home .slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home .slide video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(204, 25, 25, 0.2);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+
+/* Base styles */
+.contact form {
+    background: rgba(207, 221, 9, 0.315);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 670px;
+    margin: 0 auto;
+    margin-bottom: 2rem; /* A
+}
+
+.contact form h1 {
+    color: #030303;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 100%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid #000000;
+    box-sizing: border-box; /* Added box-sizing to include padding in width calculation */
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #f78c00;
+}
+
+.contact form #lastName,
+.contact form #mobile {
+    margin-left: 0; /* Adjust margin for smaller screens */
+    margin-top: 10px; /* Added margin-top for better spacing */
+}
+
+.contact form h4 {
+    color: #000000;
+    font-weight: 300;
+    width: 100%; /* Adjust width as needed */
+    margin-top: 20px;
+}
+
+.form-control {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #050505;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 100%; /* Adjust width as needed */
+    min-height: 80px;
+    max-height: 160px; /* Adjust max-height as needed */
+    box-sizing: border-box; /* Added box-sizing to include padding in width calculation */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .contact form input,
+    .contact form textarea {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+
+.checkbox{
+    padding: 0;
+}
+
+
+/* footer */
+
+.footer{
+    background: var(--black);
+    padding: 1rem 0; /* Reduce padding */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 0.5rem 0; /* Reduce padding */
+    color: gold;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .box-container .box a{
+    font-size: 1.6rem;
+    display: block;
+    color: var(--white);
+    padding: 0.5rem 0; /* Reduce padding */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .box-container .box a i{
+    color: #b60de0;
+    padding-right: .5rem;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .box-container .box a:hover{
+    color: turquoise;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .share{
+    padding-top: 1rem; /* Reduce padding */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .share a{
+    color: aqua;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--white);
+    margin: .3rem;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .share a:hover{
+    color: var(--white);
+    background: var(--primary);
+    transform: rotate(360deg);
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem; /* Reduce margin-top */
+    padding-top: 1rem; /* Reduce padding-top */
+    border-top: .1rem solid rgba(250, 192, 2, 0.979);
+    color: var(--white);
+    text-decoration: none; /* Remove underline */
+}
+
+.footer .credit span{
+    color: #f78c00;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Adjust min and max width for smaller screens */
+    }
+
+    .footer .share {
+        padding-top: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .footer .credit {
+        margin-top: 1rem; /* Adjust margin-top for smaller screens */
+    }
+}
+
+
+
+/* end */
+.spacer {
+    margin-bottom: 15rem; /* Add margin-bottom to create space */
+}
+
+.f1{
+    width: 230px;
+    margin-left: 80px;
+    
+}
+
+.Promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust based on your needs */
+    text-align: center;
+}
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 200px; /* Adjust based on your needs */
+    height: 300px; /* Adjust based on your needs */
+    transform-style: preserve-3d;
+    animation: rotate 60s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; /* Adjust based on your needs */
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span:hover img {
+    transform: translateY(-50px) scale(1.2);
+}
+
+.slider.paused {
+    animation-play-state: paused;
+}
+
+/* Style the modal (hidden by default) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal image - A4 size with full image displayed */
+.modal-content {
+    width: 210mm;  /* A4 width in mm */
+    height: 297mm; /* A4 height in mm */
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain; /* Ensures the full image is shown without cropping */
+    background-color: white; /* Optional: white background for A4 effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adds a shadow for better visibility */
+}
+
+/* Close button (top right corner) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsive design: Adjust modal image for different screen sizes */
+@media (max-width: 1024px) {
+    .modal-content {
+        width: 80vw; /* 80% of viewport width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90vw; /* 90% of viewport width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95vw; /* 95% of viewport width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* CSS for Swiper slider and room images */
+
+.room-image {
+    width: 100%; /* Ensures images fill their container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 300px; /* Limits maximum height of images */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    border-radius: 8px; /* Adds rounded corners to images */
+}
+
