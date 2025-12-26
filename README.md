@@ -1,6 +1,6 @@
 # 🏨 Laya Hotels – Official Multi-Hotel Website
 
-![Laya Hotels Banner](assets/readme/banner.jpg)
+![Laya Hotels Banner](images/hotels.jpg)
 
 Official website for the **Laya Hotels chain**, featuring:  
 - 🌊 **Laya Beach**  
@@ -16,11 +16,10 @@ Built with **modern UI**, **responsive design**, and **hotel booking functionali
 
 Even though the site is not live, here is a **preview/demo video**:
 
-🎬 [Watch Website Demo](https://www.youtube.com/watch?v=XXXX)  
-*(Replace with your YouTube or GitHub Issue video link)*
+🎬 [Watch Website Demo](https://www.dropbox.com/scl/fi/oib8q0xqfffm3bterkq0f/laya.mp4?rlkey=pfnfmgax1uaie44rcix8t1663&st=rgh4u1q1&dl=0)  
 
-Or embed a short GIF for quick preview:  
-![Website Preview](assets/readme/preview.gif)
+
+
 
 ---
 
